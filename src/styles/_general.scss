@@ -1,11 +1,11 @@
 body {
-  // padding-top: $navbar-height-sm;
+  padding-top: $navbar-height-sm;
   font-family: 'Cabin', sans-serif;
   background-color: #ffffff;
 
-  // @media (min-width: 768px) {
-  //   height: $navbar-height-lg;
-  // }
+  @media (min-width: 768px) {
+    padding-top: $navbar-height-lg;
+  }
 }
 
 .px-75 {
@@ -18,11 +18,11 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
-  .container {
-    max-width: 900px;
-  }
-}
+// @media (min-width: 1200px) {
+//   .container {
+//     max-width: 900px;
+//   }
+// }
 
 form .form-control {
   font-family: 'Quicksand', sans-serif;
@@ -42,3 +42,17 @@ form .form-control {
 .bg-twitter {background-color: $twitter;}
 .bg-linkedin {background-color: $linkedin;}
 .bg-whatsapp {background-color: $whatsapp;}
+
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
+  color: $red;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  transition: color .2s;
+
+  &:hover, &:focus {
+    color: $red; }
+}
