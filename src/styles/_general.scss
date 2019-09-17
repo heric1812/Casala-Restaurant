@@ -1,0 +1,44 @@
+body {
+  // padding-top: $navbar-height-sm;
+  font-family: 'Cabin', sans-serif;
+  background-color: #ffffff;
+
+  // @media (min-width: 768px) {
+  //   height: $navbar-height-lg;
+  // }
+}
+
+.px-75 {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media (min-width: 768px) {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
+form .form-control {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f2f2f2;
+  border-radius: 0.15rem;
+  box-shadow: 0 0 10px -2px rgba(0,0,0,0.15) inset;
+  color: #44484c;
+  font-size: 12px;
+  min-height: 40px;
+  padding: 0.375rem 1rem;
+}
+
+.bg-orange {background-color: $orange;}
+.bg-facebook {background-color: $facebook;}
+.bg-instagram {background-color: $instagram;}
+.bg-youtube {background-color: $youtube;}
+.bg-twitter {background-color: $twitter;}
+.bg-linkedin {background-color: $linkedin;}
+.bg-whatsapp {background-color: $whatsapp;}

@@ -1,0 +1,39 @@
+$hfooter: 180px;
+
+footer {
+  background-color: #074e6c;
+  background-image: url(/public/assets/piezas/bg6.jpg), url(/public/assets/piezas/bg7.jpg);
+  background-repeat: no-repeat;
+  background-size: 460px $hfooter, 396px $hfooter;
+  background-position: 0 0, 100% 0;
+
+  .container {
+    height: $hfooter;
+    display: flex;
+    align-items: center;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    min-height: 50px;
+
+    li {
+      line-height: 14px;
+      font-weight: 500;
+
+      @media (min-width: 768px) {
+        border-right: 1px solid $blue;
+      }
+
+      &:last-child {
+        border: none; }
+
+      .logo {
+        width: 80px;
+        filter: grayscale(1);
+      }
+    }
+  }
+}
