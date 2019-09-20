@@ -5,13 +5,6 @@ body {
   color: #000;
 }
 
-.btn {
-  border-radius: 30px;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 0.375rem 1.25rem;
-}
-
 .line-left {
   position: relative;
   &:after {
@@ -30,8 +23,24 @@ body {
   }
 }
 
+.btn {
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0.575rem 1.25rem;
+}
+
+.pl-45, .px-45 { padding-left: 2rem !important; }
+.pr-45, .px-45 { padding-right: 2rem !important; }
+
+.pt-6, .py-6 { padding-top: 6rem !important; }
+.pb-6, .py-6 { padding-bottom: 6rem !important; }
+
 @media (min-width: 992px) {
   .w-lg-75 {
     width: 75%;
+  }
+  .w-lg-85 {
+    width: 85%;
   }
 }
