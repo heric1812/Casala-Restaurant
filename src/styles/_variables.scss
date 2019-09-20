@@ -10,6 +10,7 @@ $green:   #46bdb1;
 $teal:    #20c997;
 $cyan:    #17a2b8;
 $blue-dark:#022d40;
+$dark:     #333333;
 
 $facebook:  #3c5a9a;
 $instagram: #864aa4;
@@ -18,11 +19,10 @@ $twitter:   #55aaec;
 $linkedin:  #02669d;
 $whatsapp:  #51b016;
 
-$primary:       $blue;
+$primary:       $red;
 $success:       $green;
 $info:          $cyan;
 $warning:       $orange; // $yellow !default
 $danger:        $red;
 
-$navbar-height-sm: 54px;
-$navbar-height-lg: 74px;
+$navbar-height: 74px;
