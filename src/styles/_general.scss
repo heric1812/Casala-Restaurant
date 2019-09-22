@@ -3,6 +3,12 @@ body {
   font-family: 'Cabin', sans-serif;
   background-color: #ffffff;
   color: #000;
+  background: linear-gradient(hsla(0,0%,100%,0.95), hsla(0,0%,100%,0.95)),
+              url(http://localhost:8080/public/assets/hierbas.jpg),
+              url(http://localhost:8080/public/assets/platos-arroz.jpg);
+  background-position: 0 0, 50% -8%, 50% 90%;
+  background-size: contain, 80% auto, 100% auto;
+  background-repeat: no-repeat;
 }
 
 .line-left {
@@ -21,6 +27,12 @@ body {
       width: 160px;
     }
   }
+}
+
+.overflow-ellipse {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .btn {
@@ -42,5 +54,52 @@ body {
   }
   .w-lg-85 {
     width: 85%;
+  }
+}
+
+.card-custom {
+  overflow: hidden;
+  box-shadow: 0 1rem 2.5rem rgba(190, 190, 190, 0.4);
+
+  &, .card-img-top {
+    border-radius: 5px;
+  }
+  .card-title {
+    color: $dark;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+.input-number {
+  width: 85px;
+  min-width: 85px;
+
+  .form-control {
+    background-color: #e6e6e6;
+    border-radius: 4px !important;
+    padding: 0;
+    height: 26px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  &-btn {
+    background-color: transparent;
+    border: none;
+    color: #555;
+    font-size: 10px;
+    text-align: center;
+    padding: 5px;
+    height: 26px;
+    width: 26px;
+    transition: color .2s;
+    &:hover, &:focus {
+      color: $primary;
+    }
+
+    i {
+      pointer-events: none;
+    }
   }
 }

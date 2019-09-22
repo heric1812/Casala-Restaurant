@@ -1,8 +1,8 @@
 header {
   position: relative;
 
-  .navbar {
-    height: $navbar-height;
+  .navbar-light .navbar-brand img {
+    height: 60px;
   }
 
   .mh-100vh-nav {
