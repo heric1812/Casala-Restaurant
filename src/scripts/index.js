@@ -1,7 +1,7 @@
 import '../styles/index.scss';
 const $ = require('jquery');
 import 'bootstrap';
-// import 'slick-carousel';
+import 'slick-carousel';
 
 window.jQuery = $;
 window.$ = $;
@@ -43,4 +43,30 @@ $(document).ready(function() {
       input.val(++value);
     }
   });
+});
+
+/** Carousel Service */
+$('#carousel-service').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  centerMode: true,
+  infinite: true,
+  arrows: false,
+  focusOnSelect: true,
+});
+
+$('#carousel-service-btn__prev').on('click', (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+
+  $('#carousel-service').slick('slickPrev');
+});
+
+$('#carousel-service-btn__next').on('click', (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+
+  $('#carousel-service').slick('slickNext');
 });

@@ -1,0 +1,27 @@
+.section-carousel-service {
+    .carousel-service {
+        .slick-list {
+            padding: 0 !important;
+        }
+        .slick-slide.slick-current.slick-active {
+            .card-service {
+                background-color: white;
+                box-shadow: 0 20px 1.5rem rgba(0, 0, 0, 0.07);
+            }
+        }
+    }
+}
+
+.carousel-service-btn {
+    font-size: 1.45em;
+    color: #aaa;
+    margin: 0 15px;
+    transition: color .2s;
+
+    &:hover, &:focus {
+        color: $blue-dark;
+    }
+
+    &__prev {}
+    &__next {}
+}

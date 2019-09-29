@@ -1,0 +1,25 @@
+.card-service {
+    border: none;
+    background-color: transparent;
+    transition: background-color .3s ease-in-out, box-shadow .3s ease-in-out;
+    
+    &, .card-img-top {
+        border-radius: 18px;
+    }
+
+    .icon {
+        border-radius: 5rem;
+        background: $info;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        line-height: 32px;
+        padding-left: 1px;
+        color: white;
+        font-size: 0.8em;
+    }
+
+    .wrap {
+        margin-left: 0.7rem;
+    }
+}
